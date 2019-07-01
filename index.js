@@ -1,5 +1,7 @@
 const algoliasearch = require('algoliasearch');
-const client = algoliasearch('K0HE7D0AWF', '8d06610e21bc1a017513ed08a85f9b6b');
+const dotenv = require('dotenv');
+dotenv.config();
+const client = algoliasearch('K0HE7D0AWF', process.env.API_KEY);
 const index = client.initIndex('dev_ALGOLIA');
 
 const contactsJSON = require('./contacts.json');

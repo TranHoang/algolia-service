@@ -4,6 +4,8 @@
     "description": "Update Algolia Index for CMDS",
     "main": "index.js",
     "dependencies": {
+        "algoliasearch": "^3.33.0",
+        "dotenv": "^8.0.0",
         "request": "latest"
     },
     "devDependencies": {},
